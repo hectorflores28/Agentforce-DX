@@ -218,8 +218,7 @@ npm run test:unit:coverage    # Pruebas con cobertura
 - [VS Code Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
 
 ## 📄 Licencia
-
-Este proyecto está licenciado bajo los términos de la **Licencia MIT**.
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para detalles.
 
 ---
 

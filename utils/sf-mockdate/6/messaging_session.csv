@@ -1,0 +1,6 @@
+SessionKey,Status,StartTime,EndTime,MessagingUserName,OwnerUsername
+SESS-9001,Ended,2026-08-19 10:00:00,2026-08-19 10:15:00,John Doe WhatsApp,cmendoza@greatresort.mock.test
+SESS-9002,Ended,2026-08-19 11:30:00,2026-08-19 11:42:00,Hector Salamanca WebChat,cmendoza@greatresort.mock.test
+SESS-9003,Active,2026-08-20 09:10:00,,Emily Watson WhatsApp,srios@greatresort.mock.test
+SESS-9004,Ended,2026-08-18 16:00:00,2026-08-18 16:20:00,Valeria Perez SMS,lgomez@greatresort.mock.test
+SESS-9005,Ended,2026-08-20 08:00:00,2026-08-20 08:12:00,Bruce Wayne WebChat,pmorales@greatresort.mock.test

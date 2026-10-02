@@ -1,0 +1,16 @@
+Name,Amount,StageName,CloseDate,AccountNumber,OwnerUsername
+Acme - Annual Corporate Retreat,150000,Closed Won,2026-03-15,ACC-1001,cmendoza@greatresort.mock.test
+TechFlow - Q3 Executive Summit,45000,Qualification,2026-09-30,ACC-1002,lgomez@greatresort.mock.test
+Global Logistics - Fleet Convention,280000,Negotiation/Review,2026-11-15,ACC-1003,mtorres@greatresort.mock.test
+CloudNet - Tech Conference 2026,120000,Proposal/Price Quote,2026-10-01,ACC-1004,srios@greatresort.mock.test
+NextGen - Plant Managers Meeting,35000,Needs Analysis,2026-08-28,ACC-1005,jluna@greatresort.mock.test
+Apex - Energy Leadership Gala,310000,Closed Won,2026-05-20,ACC-1006,ecastillo@greatresort.mock.test
+Pinnacle - Medical Symposium,95000,Value Proposition,2026-12-10,ACC-1007,avargas@greatresort.mock.test
+Summit - Wealth Advisory Retreat,60000,Prospecting,2026-10-15,ACC-1008,vortiz@greatresort.mock.test
+Velocity - Developer Hackathon,25000,Closed Lost,2026-04-10,ACC-1009,dnavarro@greatresort.mock.test
+Beacon - Brand Launch Party,80000,Negotiation/Review,2026-09-15,ACC-1010,csolis@greatresort.mock.test
+Horizon - Hospitality Workshop,50000,Closed Won,2026-02-10,ACC-1011,rreyes@greatresort.mock.test
+BlueSky - Pilots Union Gala,400000,Proposal/Price Quote,2026-11-30,ACC-1012,pmorales@greatresort.mock.test
+Vanguard - Holiday Gala,180000,Needs Analysis,2026-12-18,ACC-1014,gpaz@greatresort.mock.test
+Prime Pharma - Global Advisory,220000,Closed Won,2026-06-01,ACC-1017,lgomez@greatresort.mock.test
+Zenith - VIP Experience Booking,135000,Qualification,2026-09-05,ACC-1020,jluna@greatresort.mock.test

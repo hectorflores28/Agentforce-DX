@@ -1,0 +1,21 @@
+Name,AccountNumber,Type,Industry,AnnualRevenue,OwnerUsername
+Acme Corp,ACC-1001,Customer - Direct,Technology,5000000,cmendoza@greatresort.mock.test
+TechFlow Inc,ACC-1002,Prospect,Consulting,1500000,lgomez@greatresort.mock.test
+Global Logistics,ACC-1003,Customer - Channel,Shipping,12000000,mtorres@greatresort.mock.test
+CloudNet,ACC-1004,Customer - Direct,Technology,8500000,srios@greatresort.mock.test
+NextGen Solutions,ACC-1005,Prospect,Manufacturing,3200000,jluna@greatresort.mock.test
+Apex Industries,ACC-1006,Customer - Direct,Energy,21000000,ecastillo@greatresort.mock.test
+Pinnacle Health,ACC-1007,Customer - Channel,Healthcare,9400000,avargas@greatresort.mock.test
+Summit Finance,ACC-1008,Prospect,Finance,6700000,vortiz@greatresort.mock.test
+Velocity Tech,ACC-1009,Customer - Direct,Technology,1100000,dnavarro@greatresort.mock.test
+Beacon Marketing,ACC-1010,Customer - Channel,Media,2400000,csolis@greatresort.mock.test
+Horizon Travels,ACC-1011,Customer - Direct,Hospitality,4500000,rreyes@greatresort.mock.test
+BlueSky Airlines,ACC-1012,Customer - Direct,Transportation,35000000,pmorales@greatresort.mock.test
+Omni Media,ACC-1013,Prospect,Media,1800000,aherrera@greatresort.mock.test
+Vanguard Retail,ACC-1014,Customer - Channel,Retail,14200000,gpaz@greatresort.mock.test
+Solaris Energy,ACC-1015,Prospect,Energy,9800000,fsilva@greatresort.mock.test
+Atlas Foods,ACC-1016,Customer - Direct,Food & Beverage,7300000,cmendoza@greatresort.mock.test
+Prime Pharma,ACC-1017,Customer - Channel,Healthcare,18500000,lgomez@greatresort.mock.test
+Urban Construction,ACC-1018,Prospect,Construction,5200000,mtorres@greatresort.mock.test
+EcoLogistics,ACC-1019,Customer - Direct,Shipping,3100000,srios@greatresort.mock.test
+Zenith Luxury,ACC-1020,Customer - Direct,Hospitality,12900000,jluna@greatresort.mock.test

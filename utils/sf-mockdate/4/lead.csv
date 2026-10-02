@@ -1,0 +1,11 @@
+FirstName,LastName,Company,Email,Status,LeadSource,OwnerUsername
+Hector,Salamanca,Desert Resorts,hsalamanca@desertresorts.mock,Open - Not Contacted,Web,cmendoza@greatresort.mock.test
+Valeria,Perez,Riviera Events,vperez@rivieraevents.mock,Working - Contacted,Phone Inquiry,lgomez@greatresort.mock.test
+Esteban,Quito,Quito Travel,equito@quitotravel.mock,Working - Contacted,Partner Referral,mtorres@greatresort.mock.test
+Monica,Geller,Central Perk Catering,mgeller@centralperk.mock,Closed - Converted,Purchased List,srios@greatresort.mock.test
+Chandler,Bing,ChanClan Media,cbing@chanclan.mock,Open - Not Contacted,Web,jluna@greatresort.mock.test
+Ross,Geller,Paleo Tours,rgeller@paleotours.mock,Working - Contacted,External Referral,ecastillo@greatresort.mock.test
+Rachel,Green,Fashion Travel,rgreen@fashiontravel.mock,Closed - Not Converted,Web,avargas@greatresort.mock.test
+Joey,Tribbiani,Actors Guild Retreats,jtribbiani@actorsguild.mock,Open - Not Contacted,Trade Show,vortiz@greatresort.mock.test
+Phoebe,Buffay,Smelly Cat Events,pbuffay@smellycat.mock,Working - Contacted,Word of mouth,dnavarro@greatresort.mock.test
+Lalo,Salamanca,Juarez Holdings,lsalamanca@juarezholdings.mock,Open - Not Contacted,Web,csolis@greatresort.mock.test

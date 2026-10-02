@@ -1,0 +1,6 @@
+Name,MessagingPlatformKey,MessageType,ContactEmail,LeadEmail
+John Doe WhatsApp,+5255550101,WhatsApp,jdoe@acme.mock,
+Hector Salamanca WebChat,webchat_hsalamanca_01,EmbeddedMessaging,,hsalamanca@desertresorts.mock
+Emily Watson WhatsApp,+5255550104,WhatsApp,ewatson@cloudnet.mock,
+Valeria Perez SMS,+5255550199,Text,vperez@rivieraevents.mock,
+Bruce Wayne WebChat,webchat_bwayne_02,EmbeddedMessaging,bwayne@bluesky.mock,

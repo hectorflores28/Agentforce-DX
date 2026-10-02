@@ -1,0 +1,11 @@
+CaseNumber,Subject,Status,Priority,Origin,AccountNumber,ContactEmail
+CS-2001,Special Dietary Request for Gala,New,Medium,Email,ACC-1001,jdoe@acme.mock
+CS-2002,AV Equipment Failure in Hall B,Closed,High,Phone,ACC-1003,rlangdon@globallogistics.mock
+CS-2003,Late Check-out Request for Executives,In Progress,Low,Web,ACC-1004,ewatson@cloudnet.mock
+CS-2004,Invoice Discrepancy Q2 Booking,Working,High,Email,ACC-1006,lpalmer@apex.mock
+CS-2005,Airport Shuttle Schedule Delay,New,Medium,Phone,ACC-1007,dmiller@pinnacle.mock
+CS-2006,Custom Suite Setup Request,In Progress,Low,Web,ACC-1011,adent@horizontravels.mock
+CS-2007,Spa Reservation Cancellation,Closed,Low,Web,ACC-1012,bwayne@bluesky.mock
+CS-2008,Keycard Access Issue in Penthouse,Closed,High,Phone,ACC-1014,dprince@vanguard.mock
+CS-2009,Catering Menu Update Needed,New,Medium,Email,ACC-1010,coswald@beacon.mock
+CS-2010,VIP Security Clearance Protocol,In Progress,High,Email,ACC-1020,pparker@zenith.mock

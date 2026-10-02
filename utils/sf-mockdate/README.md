@@ -1,0 +1,6 @@
+# 1. Users (No tienen dependencias)
+# 2. Accounts (Se asignan a los Users)
+# 3. Contacts & Opportunities (Requieren que exista primero las Accounts)
+# 4. Leads (No tienen dependencias, pero requieren Users)
+# 5. Cases & Tasks (Requieren Accounts/Contacts/Leads)
+# 6. Messaging Users & Sessions (Requieren todo lo demas para los cruces)

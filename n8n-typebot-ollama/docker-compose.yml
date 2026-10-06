@@ -1,0 +1,110 @@
+version: '3.8'
+
+services:
+  # Base de Datos MySQL Local
+  db:
+    image: mysql:8.0
+    container_name: chatbot-mysql
+    restart: always
+    # Parche de compatibilidad de contraseñas para n8n y Python
+    command: --default-authentication-plugin=mysql_native_password --sql-mode="NO_ENGINE_SUBSTITUTION"
+    environment:
+      MYSQL_DATABASE: messaging_session
+      MYSQL_ROOT_PASSWORD: root_password_here
+      MYSQL_USER: toto
+      MYSQL_PASSWORD: IejK6J0N1s@YRq
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    # Guardrail: n8n no podrá tocar la BD hasta que pase este ping de salud interno
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "toto", "-pIejK6J0N1s@YRq"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - chatbot-network
+
+  # Ollama para LLM Local
+  ollama:
+    image: ollama/ollama:latest
+    container_name: chatbot-ollama
+    restart: always
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    networks:
+      - chatbot-network
+    entrypoint: [ "/bin/sh", "-c" ]
+    command:
+      - |
+        ollama serve &
+        sleep 5
+        ollama pull qwen2.5:0.5b
+        tail -f /dev/null
+
+  # n8n como Workflow engine / webhook router
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    container_name: chatbot-n8n
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - DB_TYPE=mysqldb
+      - DB_MYSQLDB_DATABASE=messaging_session
+      - DB_MYSQLDB_HOST=db
+      - DB_MYSQLDB_PORT=3306
+      - DB_MYSQLDB_USER=toto
+      - DB_MYSQLDB_PASSWORD=IejK6J0N1s@YRq
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+    volumes:
+      - n8n_data:/home/node/.n8n
+    # Bloqueo inteligente de inicio hasta que la BD esté 100% lista para recibir querys
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - chatbot-network
+
+  # Servidor MCP (FastMCP) que integra con MySQL y Ollama
+  mcp-server:
+    build:
+      context: ./mcp-server
+      dockerfile: Dockerfile
+    container_name: chatbot-mcp-server
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=toto
+      - DB_PASSWORD=IejK6J0N1s@YRq
+      - DB_NAME=messaging_session
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      db:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+    networks:
+      - chatbot-network
+
+networks:
+  chatbot-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  ollama_data:
+  n8n_data:

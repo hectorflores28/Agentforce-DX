@@ -1,1 +1,0 @@
-SELECT * FROM `sessions` WHERE updated_at >= '2026-06-19' ORDER BY `sessions`.`interaction_score` DESC;
